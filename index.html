@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orbit — приложение для наблюдения за звёздным небом в реальном времени">
+    <title>Orbit — космос в твоём кармане</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="#hero" class="logo">
+            <span class="logo-mark">◐</span>
+            <span class="logo-text">Orbit</span>
+        </a>
+        <nav class="main-nav" aria-label="Основная навигация">
+            <a href="#features">Возможности</a>
+            <a href="#how">Как работает</a>
+            <a href="#subscribe">Подписка</a>
+        </nav>
+        <a href="#subscribe" class="btn btn-primary btn-sm">Скачать</a>
+    </div>
+</header>
+
+<section class="hero" id="hero">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <p class="eyebrow">✨ Версия 2.0 — уже здесь</p>
+            <h1>Космос в твоём <span class="accent">кармане</span></h1>
+            <p class="lead">
+                Orbit помогает находить созвездия, планеты и метеорные потоки в реальном времени.
+                Наведи телефон на небо — и открой Вселенную.
+            </p>
+            <div class="hero-actions">
+                <a href="#subscribe" class="btn btn-primary">Попробовать бесплатно</a>
+                <a href="#features" class="btn btn-ghost">Узнать больше →</a>
+            </div>
+            <ul class="hero-stats">
+                <li><strong>2.4M</strong><span>пользователей</span></li>
+                <li><strong>88</strong><span>созвездий</span></li>
+                <li><strong>4.9★</strong><span>рейтинг</span></li>
+            </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="radar"></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="features">
+    <div class="container">
+        <header class="section-head">
+            <h2>Возможности</h2>
+            <p>Всё, что нужно, чтобы подружиться со звёздным небом</p>
+        </header>
+
+        <div class="features-grid">
+            <article class="feature-card">
+                <div class="feature-icon">🔭</div>
+                <h3>AR-наведение</h3>
+                <p>Наведи телефон — Orbit подпишет каждую звезду, планету и спутник.</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">🌌</div>
+                <h3>Карта неба</h3>
+                <p>Интерактивная карта всех 88 созвездий с фильтрами по времени и месту.</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">☄️</div>
+                <h3>Метеорные потоки</h3>
+                <p>Уведомления о ближайших потоках и лучшем времени для наблюдения.</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Прогноз погоды</h3>
+                <p>Проверим облачность и прозрачность атмосферы в вашем регионе.</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">📸</div>
+                <h3>Астрофото</h3>
+                <p>Встроенный режим длинной выдержки и трекинга для съёмки звёзд.</p>
+            </article>
+            <article class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Сообщество</h3>
+                <p>Делитесь открытиями и находите единомышленников рядом с вами.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt" id="how">
+    <div class="container">
+        <header class="section-head">
+            <h2>Как это работает</h2>
+            <p>Три шага — от запуска до первого открытия</p>
+        </header>
+
+        <ol class="steps">
+            <li class="step">
+                <span class="step-num">01</span>
+                <h3>Установи Orbit</h3>
+                <p>Скачай приложение для iOS или Android. Регистрация — 10 секунд.</p>
+            </li>
+            <li class="step">
+                <span class="step-num">02</span>
+                <h3>Наведи на небо</h3>
+                <p>Разреши доступ к камере и геолокации — и подними телефон вверх.</p>
+            </li>
+            <li class="step">
+                <span class="step-num">03</span>
+                <h3>Исследуй</h3>
+                <p>Тапай на объекты, читай описания и сохраняй открытия в личный дневник.</p>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<section class="section" id="subscribe">
+    <div class="container">
+        <div class="subscribe-card">
+            <div class="subscribe-text">
+                <h2>Получи ранний доступ</h2>
+                <p>Оставь email — пришлём ссылку на бета-версию и подборку лучших астрономических событий месяца.</p>
+            </div>
+            <form class="subscribe-form" id="subscribe-form" novalidate>
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+                <button type="submit" class="btn btn-primary">Подписаться</button>
+                <p class="form-message" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© 2025 Orbit. Космос ближе, чем кажется.</p>
+        <ul class="footer-links">
+            <li><a href="#hero">Наверх</a></li>
+            <li><a href="#features">Возможности</a></li>
+            <li><a href="#subscribe">Подписка</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
